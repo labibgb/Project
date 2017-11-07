@@ -12,12 +12,14 @@
 
 body {
   margin: 0;
+  background-color: #f1f1f1;
 }
 /* Style the header */
 .header {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 img{
 	align-content: left;
@@ -82,34 +84,66 @@ img{
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.side1{
-	border: 2px solid gray;
-	background-color: #f1f1f1;
-	color: black;
-	width: 100px;
-	height: 100%;
-	border-radius: 2px 
+.side{
+	 float: left;
+	 background-color: white;
+	 width: 24.5%;
+	 height: auto;
+	 margin-left: 4px;
+	 text-align: center;
+	 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
 }
 .middle{
-	left:110px;
-	width: 1000px;
-	height: 100%;
-	border: 1px solid gray;
-	background-color:#f1f1f1; 
-	color: black;
-	border-radius: 2px 
+	float: left;
+	background-color: white;
+	width: 50%;
+	height: auto;
+	margin-left : 5px;
+	margin-bottom: 5px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	text-align: left;
+	padding: 10px; 
 
 }
-.side2{
-	left: 1010px;
-	width: 100px;
-	border: 2px solid gray;
-	background-color: #f1f1f1;
-	color: black;
-	height: 100%;
-	border-radius: 2px 
+.side h1{
+	color :red;
+}
+.middle p{
+	font-family: 'Comic Sans MS';
+	font-size: 20px;
+	font-family: Comics sans MS;
+}
+.form{
+	border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 2px;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 </style>
 </head>
@@ -141,5 +175,22 @@ img{
   <a href="#">Request for Blood</a>
   <a href="#">Blood Banks</a> 
 </div>
+<br>
+<div class="side">
+	<div class="from">
+		<h1>Donors area</h1>
+        <form action="/action_page.php">
+        <label for="username"><b>Username:</b></label>
+        <input type="text" id ="username" name="username" placeholder="Username">
+        <br>
+        <label for="password"><b>Password:</b></label>
+        <input type="text" id ="password" name="password" placeholder="password">
+        <input type="submit" name="submit">
+        </form>
+	</div>
+</div>
+<div class="middle"><h1>Why you donate blood : <p>Blood donation is a major concern to the society as donated blood is lifesaving for individuals who need it. Blood is scarce. There is a shortage to active blood donors to meet the need of increased blood demand. Blood donation as a therapeutic exercise. Globally, approximately 80 million units of blood are donated each year. One of the biggest challenges to blood safety particularly is accessing safe and adequate quantities of blood and blood products. Safe supply of blood and blood components is essential, to enable a wide range of critical care procedures to be carried out in hospitals. Good knowledge about blood donation practices is not transforming in donating blood. Interactive awareness on blood donation should be organized to create awareness and opportunities for blood donation. Blood donation could be therefore recommended that voluntary blood donations as often as possible may be therapeutically beneficial to the donors in terms of thrombotic complications and efficient blood flow mechanisms. This is also a plus for blood donation campaigns.
+</p></div>
+<div class="side"><h1>Recent Blood Request</h1></div>
 </body>
 </html>
