@@ -1,9 +1,14 @@
+<?php
+require_once 'connect.php';
+require_once 'login.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Blood Donor</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="Blood.png" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css"></link>
 </head>
@@ -14,7 +19,7 @@
 </div>
 
 <div class="navbar">
-  <a href="#">Home</a>
+  <a href="index.php">Home</a>
   <a href="#">All Donors List</a>
   <div class="dropdown">
     <button class="dropbtn">Donors by Group 
@@ -25,7 +30,6 @@
       <a href="#">A Negative (A-)</a>
       <a href="#">AB Positive (AB+)</a>
       <a href="#">AB Negative (AB-)</a>
-      <a href="#">B Positive (B+)</a>
       <a href="#">B Negative (B-)</a>
       <a href="#">O Positive (O+)</a>
       <a href="#">O Negative (O-)</a>
@@ -34,19 +38,21 @@
   <a href="#">Donors By District</a>
   <a href="#">All Blood Request List</a>
   <a href="#">Request for Blood</a>
-  <a href="#">Blood Banks</a> 
+  <a href="bloodbank.html">Blood Banks</a>
+  <a href="#" style="float: right;">About</a> 
 </div>
 <br>
 <div class="side">
 	<div class="from">
 		<h1>Donors area</h1>
-        <form action="/action_page.php">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method = "post" >
         <label for="username"><b>Username:</b></label>
-        <input type="text" id ="username" name="username" placeholder="Username">
+        <input type="text" id ="username" name="username" placeholder="Username" value="<?php echo $username; ?>" >
         <br>
         <label for="password"><b>Password:</b></label>
-        <input type="text" id ="password" name="password" placeholder="password">
-        <input type="submit" name="submit">
+        <input type="password" id ="password" name="password" placeholder="password" value="<?php echo $password; ?>" >
+        <input type="submit" name="submit" value="login">
+        <p>Don't have an account? <a href="register.php">Sign up now</a>
         </form>
 	</div>
 </div>
