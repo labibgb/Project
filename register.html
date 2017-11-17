@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registration</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="Blood.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body class="body">
+<div class="header">
+  <img src="Blood.png" >
+</div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#">All Donors List</a>
+  <div class="dropdown">
+    <button class="dropbtn">Donors by Group 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">A Positive (A+)</a>
+      <a href="#">A Negative (A-)</a>
+      <a href="#">AB Positive (AB+)</a>
+      <a href="#">AB Negative (AB-)</a>
+      <a href="#">B Negative (B+)</a>
+      <a href="#">B Negative (B-)</a>
+      <a href="#">O Positive (O+)</a>
+      <a href="#">O Negative (O-)</a>
+    </div>
+  </div>
+  <a href="#">Donors By Distric</a>
+  <a href="#">All Blood Request List</a>
+  <a href="#">Request for Blood</a>
+  <a href="bloodbank.html">Blood Banks</a>
+  <a href="#" style = "float:right;">About</a> 
+</div>
+<br>
+<div class="container">
+		<div class="from">
+			<h1 style ="text-align: middle;">Registration From</h1>
+	        <form action="/action_page.php">
+              <label for="Name"><b>Username:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="username" name="username" placeholder="username">
+             <br>
+             <label for="Password"><b>Password:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="password" id ="password" name="password" placeholder="password">
+             <br>
+	           <label for="Name"><b>Name:<sup style="color: red;">*</sup></b></label>
+             <br>
+	           <input type="password" id ="name" name="name" placeholder="enter your name">
+	           <br>
+             <label for="group"><b>Blood group:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="bgroup" name="bgroup" placeholder="enter your blood group">
+             <br>
+              <label for="group"><b>Birth date:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="date" name="bday" min="1980-01-01">
+             <br>
+              <label for="group"><b>Living District:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="address" name="address" placeholder="District">
+             <br>
+	           <input type="submit" name="submit" value="Sign up">
+            <p> Already have account?<a href="login.html" > Login </a> here.</p>
+	        </form>
+		</div>
+</div>
+</body>
+</html>
