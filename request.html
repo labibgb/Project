@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Request for Blood</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="Blood.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body class="body">
+<div class="header">
+  <img src="Blood.png" >
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="donor.html">All Donors List</a>
+  <div class="dropdown">
+    <button class="dropbtn">Donors by Group 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="a+.html">A Positive (A+)</a>
+      <a href="a-.html">A Negative (A-)</a>
+      <a href="ab+.html">AB Positive (AB+)</a>
+      <a href="ab-.html">AB Negative (AB-)</a>
+      <a href="b+.html">B Positive (B+)</a>
+      <a href="b-.html">B Negative (B-)</a>
+      <a href="o+.html">O Positive (O+)</a>
+      <a href="o-.html">O Negative (O-)</a>
+    </div>
+  </div>
+  <a href="#">Donors By Distric</a>
+  <a href="#">All Blood Request List</a>
+  <a href="request.html">Request for Blood</a>
+  <a href="bloodbank.html">Blood Banks</a>
+  <a href="#" style = "float:right;">About</a> 
+</div>
+<br>
+<div class="container">
+  <div class="form">
+    <h1 style ="text-align: middle;">Make a Request for Blood</h1>
+          <form action="/action_page.php">
+              <label for="Name"><b>Your Name:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="name" name="name">
+             <br>
+             <label for="contact"><b>Your Contace No:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="contact" name="contact">
+             <br>
+             <label for="group"><b>Required Blood Group:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="group" name="group">
+             <br>
+             <label for="amount"><b>Amount(Unit/Bag):<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="amount" name="amount">
+             <br>
+              <label for="Location"><b>Patient's Present Location:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="location" name="location">
+             <br>
+              <label for="Location"><b>Patient's Present District:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="text" id ="Location" name="Location">
+             <br>
+              <label for="group"><b>Date of Donation:<sup style="color: red;">*</sup></b></label>
+             <br>
+             <input type="date" name="bday" min="2017-01-01">
+             <br>
+             <input type="submit" name="submit" value="Submit">
+          </form>
+  </div>
+</div>
+</body>
+</html>
